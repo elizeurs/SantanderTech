@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7599BCF722AB15140008CCE9 /* RedBgButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599BCF622AB15140008CCE9 /* RedBgButton.swift */; };
+		7599BCFB22AB179B0008CCE9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599BCFA22AB179B0008CCE9 /* Constants.swift */; };
+		7599BCFE22AB2FC10008CCE9 /* InvestimentoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599BCFD22AB2FC10008CCE9 /* InvestimentoApi.swift */; };
 		759E7E0122A96DB400B5C308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E7E0022A96DB400B5C308 /* AppDelegate.swift */; };
-		759E7E0322A96DB400B5C308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E7E0222A96DB400B5C308 /* ViewController.swift */; };
+		759E7E0322A96DB400B5C308 /* InvestimentoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E7E0222A96DB400B5C308 /* InvestimentoVC.swift */; };
 		759E7E0622A96DB400B5C308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759E7E0422A96DB400B5C308 /* Main.storyboard */; };
 		759E7E0822A96DB600B5C308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759E7E0722A96DB600B5C308 /* Assets.xcassets */; };
 		759E7E0B22A96DB600B5C308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759E7E0922A96DB600B5C308 /* LaunchScreen.storyboard */; };
+		759E7E1B22A992D700B5C308 /* DINMittelschriftStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 759E7E1222A992D600B5C308 /* DINMittelschriftStd.otf */; };
+		759E7E1C22A992D700B5C308 /* DINPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 759E7E1322A992D600B5C308 /* DINPro-Regular.otf */; };
+		759E7E1D22A992D700B5C308 /* DINNeuzeitGroteskStd-BdCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = 759E7E1422A992D600B5C308 /* DINNeuzeitGroteskStd-BdCond.otf */; };
+		759E7E1E22A992D700B5C308 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 759E7E1522A992D700B5C308 /* DINPro-Bold.otf */; };
+		759E7E1F22A992D700B5C308 /* DINNeuzeitGroteskStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 759E7E1622A992D700B5C308 /* DINNeuzeitGroteskStd-Light.otf */; };
+		759E7E2022A992D700B5C308 /* DINPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 759E7E1722A992D700B5C308 /* DINPro-Medium.otf */; };
+		759E7E2122A992D700B5C308 /* DINPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 759E7E1822A992D700B5C308 /* DINPro-Black.otf */; };
+		759E7E2222A992D700B5C308 /* DINEngschriftStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 759E7E1922A992D700B5C308 /* DINEngschriftStd.otf */; };
+		759E7E2322A992D700B5C308 /* DINPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 759E7E1A22A992D700B5C308 /* DINPro-Light.otf */; };
+		759E7E2722A99E1900B5C308 /* DINPro-Medium_13936.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759E7E2622A99E1900B5C308 /* DINPro-Medium_13936.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7599BCF622AB15140008CCE9 /* RedBgButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBgButton.swift; sourceTree = "<group>"; };
+		7599BCFA22AB179B0008CCE9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7599BCFD22AB2FC10008CCE9 /* InvestimentoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestimentoApi.swift; sourceTree = "<group>"; };
 		759E7DFD22A96DB400B5C308 /* SantanderTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SantanderTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		759E7E0022A96DB400B5C308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		759E7E0222A96DB400B5C308 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		759E7E0222A96DB400B5C308 /* InvestimentoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestimentoVC.swift; sourceTree = "<group>"; };
 		759E7E0522A96DB400B5C308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		759E7E0722A96DB600B5C308 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		759E7E0A22A96DB600B5C308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		759E7E0C22A96DB600B5C308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		759E7E1222A992D600B5C308 /* DINMittelschriftStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINMittelschriftStd.otf; sourceTree = "<group>"; };
+		759E7E1322A992D600B5C308 /* DINPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Regular.otf"; sourceTree = "<group>"; };
+		759E7E1422A992D600B5C308 /* DINNeuzeitGroteskStd-BdCond.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNeuzeitGroteskStd-BdCond.otf"; sourceTree = "<group>"; };
+		759E7E1522A992D700B5C308 /* DINPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Bold.otf"; sourceTree = "<group>"; };
+		759E7E1622A992D700B5C308 /* DINNeuzeitGroteskStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNeuzeitGroteskStd-Light.otf"; sourceTree = "<group>"; };
+		759E7E1722A992D700B5C308 /* DINPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Medium.otf"; sourceTree = "<group>"; };
+		759E7E1822A992D700B5C308 /* DINPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Black.otf"; sourceTree = "<group>"; };
+		759E7E1922A992D700B5C308 /* DINEngschriftStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINEngschriftStd.otf; sourceTree = "<group>"; };
+		759E7E1A22A992D700B5C308 /* DINPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Light.otf"; sourceTree = "<group>"; };
+		759E7E2622A99E1900B5C308 /* DINPro-Medium_13936.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Medium_13936.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +61,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7599BCF522AB14C80008CCE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7599BCF622AB15140008CCE9 /* RedBgButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7599BCF822AB16580008CCE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				759E7E0222A96DB400B5C308 /* InvestimentoVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7599BCF922AB17810008CCE9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7599BCFA22AB179B0008CCE9 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7599BCFC22AB2F970008CCE9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7599BCFD22AB2FC10008CCE9 /* InvestimentoApi.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		759E7DF422A96DB400B5C308 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +112,43 @@
 		759E7DFF22A96DB400B5C308 /* SantanderTech */ = {
 			isa = PBXGroup;
 			children = (
+				7599BCF922AB17810008CCE9 /* Utils */,
+				7599BCF522AB14C80008CCE9 /* View */,
+				759E7E2522A992F500B5C308 /* Resources */,
 				759E7E0022A96DB400B5C308 /* AppDelegate.swift */,
-				759E7E0222A96DB400B5C308 /* ViewController.swift */,
+				7599BCF822AB16580008CCE9 /* Controller */,
+				7599BCFC22AB2F970008CCE9 /* Services */,
 				759E7E0422A96DB400B5C308 /* Main.storyboard */,
 				759E7E0722A96DB600B5C308 /* Assets.xcassets */,
 				759E7E0922A96DB600B5C308 /* LaunchScreen.storyboard */,
 				759E7E0C22A96DB600B5C308 /* Info.plist */,
 			);
 			path = SantanderTech;
+			sourceTree = "<group>";
+		};
+		759E7E2422A992E500B5C308 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				759E7E2622A99E1900B5C308 /* DINPro-Medium_13936.ttf */,
+				759E7E1922A992D700B5C308 /* DINEngschriftStd.otf */,
+				759E7E1222A992D600B5C308 /* DINMittelschriftStd.otf */,
+				759E7E1422A992D600B5C308 /* DINNeuzeitGroteskStd-BdCond.otf */,
+				759E7E1622A992D700B5C308 /* DINNeuzeitGroteskStd-Light.otf */,
+				759E7E1822A992D700B5C308 /* DINPro-Black.otf */,
+				759E7E1522A992D700B5C308 /* DINPro-Bold.otf */,
+				759E7E1A22A992D700B5C308 /* DINPro-Light.otf */,
+				759E7E1722A992D700B5C308 /* DINPro-Medium.otf */,
+				759E7E1322A992D600B5C308 /* DINPro-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		759E7E2522A992F500B5C308 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				759E7E2422A992E500B5C308 /* Fonts */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +209,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759E7E1D22A992D700B5C308 /* DINNeuzeitGroteskStd-BdCond.otf in Resources */,
+				759E7E1C22A992D700B5C308 /* DINPro-Regular.otf in Resources */,
 				759E7E0B22A96DB600B5C308 /* LaunchScreen.storyboard in Resources */,
+				759E7E1F22A992D700B5C308 /* DINNeuzeitGroteskStd-Light.otf in Resources */,
+				759E7E2722A99E1900B5C308 /* DINPro-Medium_13936.ttf in Resources */,
 				759E7E0822A96DB600B5C308 /* Assets.xcassets in Resources */,
+				759E7E1E22A992D700B5C308 /* DINPro-Bold.otf in Resources */,
+				759E7E1B22A992D700B5C308 /* DINMittelschriftStd.otf in Resources */,
+				759E7E2222A992D700B5C308 /* DINEngschriftStd.otf in Resources */,
+				759E7E2322A992D700B5C308 /* DINPro-Light.otf in Resources */,
+				759E7E2122A992D700B5C308 /* DINPro-Black.otf in Resources */,
+				759E7E2022A992D700B5C308 /* DINPro-Medium.otf in Resources */,
 				759E7E0622A96DB400B5C308 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				759E7E0322A96DB400B5C308 /* ViewController.swift in Sources */,
+				759E7E0322A96DB400B5C308 /* InvestimentoVC.swift in Sources */,
 				759E7E0122A96DB400B5C308 /* AppDelegate.swift in Sources */,
+				7599BCF722AB15140008CCE9 /* RedBgButton.swift in Sources */,
+				7599BCFE22AB2FC10008CCE9 /* InvestimentoApi.swift in Sources */,
+				7599BCFB22AB179B0008CCE9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
