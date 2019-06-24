@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		753803DC22B9BB520039AAD9 /* infoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753803DB22B9BB520039AAD9 /* infoTableViewCell.swift */; };
 		753803DE22B9BB700039AAD9 /* downInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753803DD22B9BB700039AAD9 /* downInfoTableViewCell.swift */; };
+		75384C8622C06C4D000ADD6E /* ContatoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75384C8522C06C4D000ADD6E /* ContatoVC.swift */; };
+		75384C8A22C0F7E3000ADD6E /* SentMsgVCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75384C8922C0F7E3000ADD6E /* SentMsgVCV.swift */; };
+		75551BBC22BD6FE90009341A /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75551BBB22BD6FE90009341A /* TabVC.swift */; };
 		7599BCF722AB15140008CCE9 /* RedBgButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599BCF622AB15140008CCE9 /* RedBgButton.swift */; };
 		7599BCFB22AB179B0008CCE9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599BCFA22AB179B0008CCE9 /* Constants.swift */; };
 		7599BCFE22AB2FC10008CCE9 /* InvestimentoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599BCFD22AB2FC10008CCE9 /* InvestimentoApi.swift */; };
@@ -36,6 +39,9 @@
 		705D1855CD62C98A8B0F90E9 /* Pods-SantanderTech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SantanderTech.release.xcconfig"; path = "Target Support Files/Pods-SantanderTech/Pods-SantanderTech.release.xcconfig"; sourceTree = "<group>"; };
 		753803DB22B9BB520039AAD9 /* infoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoTableViewCell.swift; sourceTree = "<group>"; };
 		753803DD22B9BB700039AAD9 /* downInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = downInfoTableViewCell.swift; sourceTree = "<group>"; };
+		75384C8522C06C4D000ADD6E /* ContatoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoVC.swift; sourceTree = "<group>"; };
+		75384C8922C0F7E3000ADD6E /* SentMsgVCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentMsgVCV.swift; sourceTree = "<group>"; };
+		75551BBB22BD6FE90009341A /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
 		7599BCF622AB15140008CCE9 /* RedBgButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBgButton.swift; sourceTree = "<group>"; };
 		7599BCFA22AB179B0008CCE9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7599BCFD22AB2FC10008CCE9 /* InvestimentoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestimentoApi.swift; sourceTree = "<group>"; };
@@ -94,6 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				759E7E0222A96DB400B5C308 /* InvestimentoVC.swift */,
+				75551BBB22BD6FE90009341A /* TabVC.swift */,
+				75384C8522C06C4D000ADD6E /* ContatoVC.swift */,
+				75384C8922C0F7E3000ADD6E /* SentMsgVCV.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -317,12 +326,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75384C8A22C0F7E3000ADD6E /* SentMsgVCV.swift in Sources */,
+				75551BBC22BD6FE90009341A /* TabVC.swift in Sources */,
 				75CBAC4722AF351800CE9922 /* Model.swift in Sources */,
 				753803DC22B9BB520039AAD9 /* infoTableViewCell.swift in Sources */,
 				759E7E0322A96DB400B5C308 /* InvestimentoVC.swift in Sources */,
 				759E7E0122A96DB400B5C308 /* AppDelegate.swift in Sources */,
 				7599BCF722AB15140008CCE9 /* RedBgButton.swift in Sources */,
 				7599BCFE22AB2FC10008CCE9 /* InvestimentoApi.swift in Sources */,
+				75384C8622C06C4D000ADD6E /* ContatoVC.swift in Sources */,
 				753803DE22B9BB700039AAD9 /* downInfoTableViewCell.swift in Sources */,
 				7599BCFB22AB179B0008CCE9 /* Constants.swift in Sources */,
 			);

@@ -9,12 +9,13 @@
 import UIKit
 import AlamofireObjectMapper
 import Alamofire
+import SafariServices
 
-class InvestimentoVC: UIViewController {
+class InvestimentoVC: UIViewController, SFSafariViewControllerDelegate {
   
   var infoList: [InfoModel] = []
   var downInfoList: [downInfoModel] = []
-
+  
   
   @IBOutlet var monthFundLbl: UILabel!
   @IBOutlet var monthCDILbl: UILabel!
@@ -29,8 +30,6 @@ class InvestimentoVC: UIViewController {
     super.viewDidLoad()
     
     self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
-//    self.tableView.rowHeight = UITableView.automaticDimension
-//    self.tableView.estimatedRowHeight = 500
     
     tableView.dataSource = self
     tableView.delegate = self
@@ -51,15 +50,135 @@ class InvestimentoVC: UIViewController {
         
         let fundResponse = response.value
         
+//        fundResponse?.risk = 4
+//
+//        switch fundResponse?.risk {
+//        case 1: do {
+//          self.seta1.isHidden = false
+//          self.subView1.isHidden = false
+//          self.view1.isHidden = false
+//
+//          self.seta2.isHidden = true
+//          self.subView2.isHidden = true
+//          self.view2.isHidden = true
+//
+//          self.seta3.isHidden = true
+//          self.subView3.isHidden = true
+//          self.view3.isHidden = true
+//
+//          self.seta4.isHidden = true
+//          self.subView4.isHidden = true
+//          self.view4.isHidden = true
+//
+//          self.seta5.isHidden = true
+//          self.subView5.isHidden = true
+//          self.view5.isHidden = true
+//          break
+//        }
+//
+//        case 2: do {
+//          self.seta1.isHidden = true
+//          self.subView1.isHidden = true
+//          self.view1.isHidden = true
+//
+//          self.seta2.isHidden = false
+//          self.subView2.isHidden = false
+//          self.view2.isHidden = false
+//
+//          self.seta3.isHidden = true
+//          self.subView3.isHidden = true
+//          self.view3.isHidden = true
+//
+//          self.seta4.isHidden = true
+//          self.subView4.isHidden = true
+//          self.view4.isHidden = true
+//
+//          self.seta5.isHidden = true
+//          self.subView5.isHidden = true
+//          self.view5.isHidden = true
+//          break
+//          }
+//
+//        case 3: do {
+//          self.seta1.isHidden = true
+//          self.subView1.isHidden = true
+//          self.view1.isHidden = true
+//
+//          self.seta2.isHidden = true
+//          self.subView2.isHidden = true
+//          self.view2.isHidden = true
+//
+//          self.seta3.isHidden = false
+//          self.subView3.isHidden = false
+//          self.view3.isHidden = false
+//
+//          self.seta4.isHidden = true
+//          self.subView4.isHidden = true
+//          self.view4.isHidden = true
+//
+//          self.seta5.isHidden = true
+//          self.subView5.isHidden = true
+//          self.view5.isHidden = true
+//          break
+//          }
+//
+//        case 4: do {
+//          self.seta1.isHidden = true
+//          self.subView1.isHidden = true
+//          self.view1.isHidden = true
+//
+//          self.seta2.isHidden = true
+//          self.subView2.isHidden = true
+//          self.view2.isHidden = true
+//
+//          self.seta3.isHidden = true
+//          self.subView3.isHidden = true
+//          self.view3.isHidden = true
+//
+//          self.seta4.isHidden = false
+//          self.subView4.isHidden = false
+//          self.view4.isHidden = false
+//
+//          self.seta5.isHidden = true
+//          self.subView5.isHidden = true
+//          self.view5.isHidden = true
+//          break
+//          }
+//
+//        case 5: do {
+//          self.seta1.isHidden = true
+//          self.subView1.isHidden = true
+//          self.view1.isHidden = true
+//
+//          self.seta2.isHidden = true
+//          self.subView2.isHidden = true
+//          self.view2.isHidden = true
+//
+//          self.seta3.isHidden = true
+//          self.subView3.isHidden = true
+//          self.view3.isHidden = true
+//
+//          self.seta4.isHidden = true
+//          self.subView4.isHidden = true
+//          self.view4.isHidden = true
+//
+//          self.seta5.isHidden = false
+//          self.subView5.isHidden = false
+//          self.view5.isHidden = false
+//          break
+//          }
+//
+//        default:
+//          break
+//      }
+        
         self.monthFundLbl.text = "\(String(fundResponse?.monthFund ?? 0.0)) %"
         self.monthCDILbl.text = "\(String(fundResponse?.monthCDI ?? 0.0)) %"
         self.yearCDILbl.text = "\(String(fundResponse?.yearCDI ?? 0.0)) %"
         self.yearFundLbl.text = "\(String(fundResponse?.yearFund ?? 0.0)) %"
         self.twelveMonthsFundLbl.text = "\(String(fundResponse?.twelveMonthsFund ?? 0.0)) %"
         self.twelveMonthsCDILbl.text = "\(String(fundResponse?.twelveMonthsCDI ?? 0.0)) %"
-        //      print(fundResponse?.fundName ?? "")
-        //      print(fundResponse?.monthFund ?? 0.0)
-        //      print(fundResponse?.monthCDI ?? 0.0)
+
         
         if let info = fundResponse?.info {
           
@@ -80,13 +199,13 @@ class InvestimentoVC: UIViewController {
   }
   
   func loadData() {
-    
+
     let url = "https://floating-mountain-50292.herokuapp.com/cells.json"
-    
+
     Alamofire.request(url).responseObject { (response: DataResponse<CellModel>) in
-      
+
       if response.result.isSuccess {
-        
+
         let cellResponse = response.value
         if let cell = cellResponse?.cells{
           for item in cell {
@@ -98,7 +217,26 @@ class InvestimentoVC: UIViewController {
       }
     }
   }
+  
+  @IBAction func operURL(_ sender: Any) {
+    
+    // check if website exists
+    guard let url = URL(string: "https://www.google.com/") else {
+      return
+    }
+    
+    let safariVC = SFSafariViewController(url: url)
+    present(safariVC, animated: true, completion: nil)
+  }
+  
+  func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+    controller.dismiss(animated: true, completion: nil)
+  }
+  
+
+  
 }
+
 
 extension InvestimentoVC: UITableViewDataSource, UITableViewDelegate {
   
